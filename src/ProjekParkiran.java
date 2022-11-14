@@ -34,7 +34,7 @@ public class ProjekParkiran {
         }
         totalSisaKuota = totalJumlahKendaraan - totalLantai1 - totalLantai2 - totalLantai3;
         System.out.println("Total Kendaraan lantai 1 : " + totalLantai1 + " | total Kendaraan Lantai 2 : " + totalLantai2 + " | total Kendaraan Lantai 3 : "+ totalLantai3);
-        System.out.println("jumlah kapasitas : " + totalJumlahKendaraan + " | total Kendaraan : " + totalSisaKuota);
+        System.out.println("Jumlah kapasitas : " + totalJumlahKendaraan + " | total Kendaraan : " + totalSisaKuota);
         System.out.println("-----------------------------------------------------");
 
     }
@@ -49,8 +49,8 @@ public class ProjekParkiran {
             myArray[indexNow] = kendaraan;
         }
     }
-    public static void simpanKendaraan (int angakaRandom, String kendaraan){
-        switch (angakaRandom){
+    public static void simpanKendaraan (int angkaRandom, String kendaraan){
+        switch (angkaRandom){
             case 1:
                 ChekIndexArray(Lantai1,kendaraan);
                 System.out.println("anda parkir di lantai 1");
@@ -71,7 +71,7 @@ public class ProjekParkiran {
     public static void inputKendaraan(){
         Scanner inputData = new Scanner(System.in);
         while (true){
-            System.out.print("Masukan Plat Nomer = ");
+            System.out.print("Masukan Plat Nomor = ");
             String platNomor = inputData.nextLine();
             if (platNomor.isBlank()) {
                 System.out.println("Plat nomor wajib diisi ");
